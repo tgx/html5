@@ -1,0 +1,89 @@
+body{
+	background-color: #ddd;	/* Cor de fundo*/
+	color: #222;	/* Cor de frente usada para o texto*/
+	font-family: helvetica;
+	font-size: 14px;
+	margin: 0;	/* Quantidade de espaco negativo em torno da parte externa de body*/
+	padding: 0;	/* Quantidade de espaco negativo em torno da parte interna de body*/
+}
+
+#header h1 a{ /*Efeito gradiente */
+	text-shadow: 0px 1px 1px #fff;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#999));
+}
+
+#header h1{
+	margin: 0;
+	padding: 0;
+}
+#header h1 a{
+	background-color: #ccc;
+	border-bottom: 1px solid #666;
+	color: #222;
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px 0;
+	text-align: center;
+	text-decoration: none;
+}
+#header ul{
+	list-style: none;
+	margin: 10px;
+	padding: 0;
+}
+
+#header ul li a{
+	background-color: #ffffff;
+	border: 1px solid #999999;
+	color: #222222;
+	display: block;
+	font-size: 17px;
+	font-weight: bold;
+	margin-bottom: -1px;
+	padding: 12px 10px;
+	text-decoration: none;
+}
+/* Inicio Arredondando o canto das bordas do menu */
+#header ul li:first-child a{ /*Pega o primeiro filho de ul*/
+	-webkit-border-top-left-radius: 8px;
+	-webkit-border-top-right-radius: 8px;
+}
+
+#header ul li:last-child a{ /* Pega o ultimo filho de ul */
+	-webkit-border-bottom-left-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+}
+/* Inicio Arredondando o canto das bordas do menu */
+
+#header ul.hide{ /* Esconde a ul do menu */
+	display: none;
+}
+
+#header div.pressed{
+	-webkit-border-image: url(img/menu.jpg) 1;
+}
+
+
+#content, #sidebar{ /* Espaço entre o about*/
+	padding: 10px;
+}
+
+#header div.leftButton{
+	position: absolute;
+	top: 7px;
+	left: 6px;
+	height: 20px;
+	font-weight: bold;
+	text-align: center;
+	color: black;
+	text-shadow: rgba(0,0,0,0.6) 0px -1px -1px;
+	line-height: 15px;
+	border-width: 0 0px 0 0px;
+	-webkit-border-image: url(img/menu.jpg);
+}
+
+/*
+#footer{
+	display: none;
+}*/
